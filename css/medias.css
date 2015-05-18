@@ -1,0 +1,26 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (color) and (min-width : 128px) and (max-width : 480px){
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 480px) {
+    #recordForm{
+        width: 50%;
+        margin: 0 auto;
+    }
+/* Styles */
+ 
+}
+
+@media only screen and (min-width : 1824px){
+    font-size: 500%;
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+    #recordForm{
+        width: 50%;
+        margin: 0 auto;
+    }
+}

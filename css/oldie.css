@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:600);
+
+a{
+    text-decoration:none
+}
+
+[hidden] {
+    display: none
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    margin: 0
+}
+
+/*
+ based on http://paletton.com/#uid=12y0u0k86mh3tfi00++62NQmJD8
+*/
+
+.soft{
+ background: rgb(222, 245, 199); /*#DEF5C7*/
+}
+
+.dark{
+ background: rgb(104, 110, 98); /*#686E62*/
+}
+
+.white{
+ background: rgb(255, 255, 255);/*#FFFFFF*/
+}
+
+.background{
+ background: rgb(140, 160, 120); /*#8CA078*/
+}
+
+.green{
+ background: #99EC44;
+}
+
+/*fonts*/
+
+@font-face {
+  font-family: 'Bretan';
+  src: url('fonts/Bretan.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Bretan.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Bretan.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Bretan.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Bretan.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Bretan.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+html { font-size: 62.5%; } 
+
+body { font-size: 14px; font-size: 1.4rem; } /* =14px */
+
+label { font-size: 24px; font-size: 2.4rem; } /* =24px */
+
+footer{
+   background: #686E62;
+   color: white;
+   text-align: center;
+   padding: 2rem;
+   font-size: 1rem;
+   font-size: 10px;
+}
+
+/*form styles*/
+input{
+    display:block;
+    width: auto;
+    margin-left:auto;
+    margin-right:auto;
+    -webkit-mask-composite: initial;
+    -webkit-border-end-width: inherit;
+    background-blend-mode: initial;
+    background-clip: border-box;
+    background:  rgb(222, 245, 199); /*#DEF5C7*/;
+    background:  #DEF5C7;
+    padding: 7px;
+    padding: 0.7rem;
+}
+
+
+input[type='submit']{
+ background : #8CA078;
+ color: #0B0F07;
+}
+
+.errorInput{
+    background: #FF574A;
+    color: white;
+}
+
+.errorMsg::before, .errorMsg:before{
+    content:"Error: ";
+}
+
+.errorMsg{
+    font-size: 1.2rem;
+    font-size: 12px;
+}
+
+.title{
+     font-family: 'Dosis',Arial,Helvetica Neue,Helvetica,sans-serif;
+     color: white;
+     float: right;
+     width: 100%;
+     text-align: center;
+     padding: 7px;
+     padding: 0.7rem;
+}
+
+/*autocomplete styles*/
+
+.autocomplete-suggestions{
+     background: white;    
+     color: black;
+     padding: 1.4rem;
+     overflow: auto;
+}
+
+.autocomplete-suggestion{
+    font-family: 'Bretan',Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: -large;
+    text-rendering: optimizeLegibility;
+    text-overflow: ellipsis;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; 
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.autocomplete-selected{
+    color: black;
+    background: #DEF5C7;
+    border: 1px solid #6d736f;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100); 
+    opacity: 1;
+}

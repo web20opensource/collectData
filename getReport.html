@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular-resource.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controller.js"></script>
+    <script type="text/javascript" src="js/services.js"></script>
+    <title>Reporte</title>
+</head>
+<body>
+ <div ng-app="getReportModule" ng-controller="ReporterCtrl">
+     <table>
+         <tr ng-repeat="record in records">
+             <td>{{record.RID}}</td>
+             <td>{{record.main}}</td>
+             <td>{{record.typeT}}</td>
+             <td>{{record.first}}</td>
+             <td>{{record.second}}</td>
+             <td>{{record.name}}</td>
+             <td>{{record.sex}}</td>
+             <td>{{record.grade}}</td>
+             <td>{{record.disc}}</td>
+             <td>{{record.subd}}</td>
+             <td>{{record.esp}}</td>
+             <td>{{record.sni}}</td>
+             <td>{{record.rcea}}</td>
+             <td>{{record.cvu}}</td>
+             <td>{{record.iAcad}}</td>
+             <td>{{record.dep}}</td>
+             <td>{{record.dirDep}}</td>
+             <td>{{record.ent}}</td>
+             <td>{{record.tel}}</td>
+             <td>{{record.telExt}}</td>
+             <td>{{record.cel}}</td>
+             <td>{{record.emailI}}</td>
+             <td>{{record.emailP}}</td>
+         </tr >
+     </table>
+ </div>
+</body>
+</html>
